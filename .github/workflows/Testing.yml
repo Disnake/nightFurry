@@ -4,8 +4,8 @@ name: CI
 
 on:
   push:
-    branches: [ main ]    
-#     branches-ignore: [firstBranch]
+#     branches: [ main ]    
+    branches-ignore: [main]
 
   workflow_dispatch:
     inputs:
@@ -13,14 +13,14 @@ on:
         required: true
         description: Name your workflow
         type: String
-        default: workflow #1
-        options: [A,B,C,D,E]
+        default: workflow
+        options: [first,second,third,fourth]
         
       description:
         required: false
         description: Purpose of your workflow run
         type: String
-        default: e.g. Business request
+        default: Business request
         
 
 jobs:
