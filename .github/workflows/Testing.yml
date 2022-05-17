@@ -4,8 +4,8 @@ name: CI
 
 on:
   push:
-    branches: [ main ]
-    branches-ignore: [firstBranch]
+    branches: [ main ]    
+#     branches-ignore: [firstBranch]
 
   workflow_dispatch:
     inputs:
